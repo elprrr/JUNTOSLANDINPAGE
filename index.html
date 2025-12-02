@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juntos+ Landing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-inner">
+        <div class="header-left">
+          <img src="imagn/loguito.png" class="logo-img" alt="Juntos+ logo" />
+          <span class="logo-text">Juntos+</span>
+        </div>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li><a href="#inicio" data-i18n="navHome">HOME</a></li>
+            <li><a href="#nosotros" data-i18n="navAbout">ABOUT</a></li>
+            <li>
+              <a href="#beneficios" data-i18n="navTestimonials">TESTIMONIALS</a>
+            </li>
+            <li><a href="#contacto" data-i18n="navContact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <div class="lang-toggle" id="langToggle">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+          </div>
+
+          <button class="btn btn-outline" type="button" data-i18n="headerLogin">
+            Log in
+          </button>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <h1 class="hero-title" data-i18n="heroTitle">
+            More than an app, a space for<br />
+            friendship and wellbeing
+          </h1>
+
+          <!-- CTA descarga app -->
+          <a
+            href="#contacto"
+            class="btn btn-primary hero-cta"
+            data-i18n="heroCta"
+          >
+            Download the Juntos+ App Now
+          </a>
+        </div>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section id="nosotros" class="nosotros-wrapper">
+        <div class="container">
+          <div class="nosotros-card">
+            <h2 class="nosotros-title" data-i18n="aboutTitle">ABOUT US</h2>
+
+            <p class="nosotros-text" data-i18n="aboutMission">
+              Our mission is to offer an accessible digital environment where
+              older adults can create friendships, share experiences and feel
+              accompanied.
+            </p>
+
+            <div class="nosotros-divider"></div>
+
+            <p class="nosotros-text" data-i18n="aboutVision">
+              We want to be the leading social and digital integration platform
+              for older adults in Latin America, strengthening their wellbeing
+              and promoting active communities.
+            </p>
+
+            <p class="nosotros-subtitle" data-i18n="aboutSubtitle">
+              VALUES WE LIVE BY
+            </p>
+
+            <div class="nosotros-icons">
+              <div class="nosotros-icon-item">
+                <div class="icon-circle">🤝</div>
+                <span data-i18n="valueInclusion">Inclusion</span>
+              </div>
+              <div class="nosotros-icon-item">
+                <div class="icon-circle">💛</div>
+                <span data-i18n="valueEmpathy">Empathy</span>
+              </div>
+              <div class="nosotros-icon-item">
+                <div class="icon-circle">💡</div>
+                <span data-i18n="valueInnovation">Social innovation</span>
+              </div>
+              <div class="nosotros-icon-item">
+                <div class="icon-circle">👥</div>
+                <span data-i18n="valueConnection">Human connection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFICIOS -->
+      <section id="beneficios" class="beneficios-section">
+        <div class="container beneficios-inner">
+          <h2 class="beneficios-title" data-i18n="benefitsTitle">BENEFITS</h2>
+          <div class="beneficios-line"></div>
+
+          <div class="beneficios-grid">
+            <div class="beneficio-item">
+              <div class="beneficio-icon">🤝</div>
+              <p data-i18n="benefit1">Make new friends</p>
+            </div>
+            <div class="beneficio-item">
+              <div class="beneficio-icon">🎉</div>
+              <p data-i18n="benefit2">Enjoy fun activities</p>
+            </div>
+            <div class="beneficio-item">
+              <div class="beneficio-icon">👥</div>
+              <p data-i18n="benefit3">Find real company</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIO (CARRUSEL) -->
+      <section class="testimonio-section">
+        <div class="testimonio-overlay"></div>
+
+        <div class="container testimonio-container">
+          <div class="testimonio-card">
+            <p class="testimonio-text" id="testimonialText">
+              With Juntos+ my dad no longer feels lonely, and that gives us
+              peace of mind.
+            </p>
+
+            <div class="testimonio-footer">
+              <div class="testimonio-user">
+                <div class="avatar-circle" id="testimonialInitials">LS</div>
+                <div class="testimonio-user-info">
+                  <span class="testimonio-name" id="testimonialName"
+                    >Laura S.</span
+                  >
+                  <span class="testimonio-role" id="testimonialRole"
+                    >Daughter and Juntos+ user</span
+                  >
+                </div>
+              </div>
+              <button class="testimonio-arrow" id="testimonialNextBtn">
+                ➜
+              </button>
+            </div>
+          </div>
+
+          <div class="testimonio-dots" id="testimonialDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="contact-section">
+        <div class="container contact-inner">
+          <div class="contact-card">
+            <h2 class="contact-title" data-i18n="contactTitle">
+              Say Hello to Us
+            </h2>
+
+            <form id="contactForm" class="contact-form">
+              <div class="contact-row">
+                <div class="form-group">
+                  <label for="name" data-i18n="contactNameLabel">
+                    What is your name? *
+                  </label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" data-i18n="contactEmailLabel">
+                    What is your email? *
+                  </label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="form-group">
+                  <label for="phone" data-i18n="contactPhoneLabel">
+                    What is your phone number?
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value="+12 345 678 90"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="district" data-i18n="contactDistrictLabel">
+                    Which district do you live in?
+                  </label>
+                  <select id="district" name="district">
+                    <option value="" data-i18n="districtPlaceholder">
+                      Select your district
+                    </option>
+                    <option>Miraflores</option>
+                    <option>San Isidro</option>
+                    <option>Santiago de Surco</option>
+                    <option>La Molina</option>
+                    <option>San Borja</option>
+                    <option>Magdalena del Mar</option>
+                    <option>Pueblo Libre</option>
+                    <option>Jesús María</option>
+                    <option>Barranco</option>
+                    <option>Chorrillos</option>
+                    <option>San Miguel</option>
+                    <option>Lince</option>
+                    <option>San Juan de Miraflores</option>
+                    <option>Villa María del Triunfo</option>
+                    <option>Villa El Salvador</option>
+                    <option>San Juan de Lurigancho</option>
+                    <option>Los Olivos</option>
+                    <option>Comas</option>
+                    <option>Independencia</option>
+                    <option>Callao</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group full">
+                <label for="message" data-i18n="contactMessageLabel">
+                  Write your message here
+                </label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+
+              <div class="contact-bottom-row">
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" id="terms" name="terms" />
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">
+                    <span data-i18n="contactTermsText">
+                      I have read and accept the Terms of
+                    </span>
+                    <br />
+                    <span class="link-yellow" data-i18n="contactTermsLink">
+                      Service &amp; Privacy Policy *
+                    </span>
+                  </span>
+                </label>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary contact-submit"
+                  data-i18n="contactSubmit"
+                >
+                  SEND MESSAGE
+                </button>
+              </div>
+
+              <p id="formMessage" class="form-message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span class="logo-text-footer">Juntos+</span>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4 data-i18n="footerNavTitle">Navigation</h4>
+            <ul>
+              <li><a href="#inicio" data-i18n="footerNavHome">Home</a></li>
+              <li>
+                <a href="#beneficios" data-i18n="footerNavBenefits">Benefits</a>
+              </li>
+              <li><a href="#!" data-i18n="footerNavPlans">Plans</a></li>
+              <li>
+                <a href="#beneficios" data-i18n="footerNavTestimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#contacto" data-i18n="footerNavContact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 data-i18n="footerLegalTitle">Legal</h4>
+            <ul>
+              <li>
+                <a href="#!" data-i18n="footerLegalTerms">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#!" data-i18n="footerLegalPrivacy">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 data-i18n="footerContactTitle">Contact</h4>
+            <ul>
+              <li data-i18n="footerContactLocation">Lima, Peru</li>
+              <li>
+                <a href="mailto:info@eternacare.pe">info@eternacare.pe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-lang-select" data-i18n="footerLang">
+            English - En
+          </div>
+
+          <!-- Redes sociales con imágenes -->
+          <div class="footer-social">
+            <a href="#!" class="social-icon" aria-label="Facebook">
+              <img src="imagn/icons8-facebook-48.png" alt="Facebook" />
+            </a>
+            <a href="#!" class="social-icon" aria-label="Instagram">
+              <img src="imagn/icons8-instagram-48.png" alt="Instagram" />
+            </a>
+            <a href="#!" class="social-icon" aria-label="TikTok">
+              <img src="imagn/icons8-tik-tok-48 (1).png" alt="TikTok" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span data-i18n="footerCopy">
+          © 2025 EternaCare. All rights reserved.
+        </span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
